@@ -8,25 +8,36 @@ header {
     & > img {
         width: 10.125rem;
         height: 2rem;
+        cursor: pointer;
     }
 
     & ul {
         height: 2.5rem;
+        cursor: pointer;
 
         & li:nth-child(1) {
             width: 1.5rem;
             height: 1.5rem;
+
+            &:hover {
+                filter: invert(50%) sepia(61%) saturate(3176%) hue-rotate(333deg) brightness(99%) contrast(89%);
+            }
         }
 
         & li:nth-child(2), 
         & li:nth-child(3) {
             display: none;
+
+            &:hover {
+                color: var(--brand-color);
+            }
         }
 
         & li:nth-child(4),
         & #profile-pic {
             width: 2.5rem;
             height: 2.5rem;
+            filter: none;
         }
     }
     
