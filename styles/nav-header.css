@@ -42,6 +42,17 @@ header {
     
 }
 
+@media ((width > 44em) and (width < 80em)) {
+    header {
+        & ul {
+            & li:nth-child(2), 
+            & li:nth-child(3) {
+                display: list-item;
+            }
+        }
+    }
+}
+
 @media (width >= 80em) {
     header {
         height: 5rem;

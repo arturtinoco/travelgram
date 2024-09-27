@@ -2,6 +2,7 @@
     flex-direction: column;
     gap: 2rem;
     background-color: var(--surface-color);
+    min-width: 18.5rem;
     padding: 2rem;
 
     & p,
@@ -19,6 +20,7 @@
 
         & .bio {
             gap: .5rem;
+            width: 18.5rem;
 
             & h1 {
                 font: var(--heading1);
@@ -33,17 +35,23 @@
 
         & > div {
             gap: .5rem;
+
+            & img {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
     }
 }
 
 #gallery {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
     padding: 1rem;
+    margin-inline: auto;
 
     & .card {
         position: relative;
@@ -88,6 +96,26 @@
     }
 }
 
+@media ((width > 44em) and (width < 80em)) {
+    #about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 37rem;
+
+        & .profile {
+            flex-direction: row;
+            gap: 2rem;
+            width: 37rem;
+
+            & img {
+                width: 11rem;
+                height: 11rem;
+            }
+        }
+    }
+}
+
 @media (width >= 80em) {
     #about {
         flex-direction: row;
@@ -110,7 +138,8 @@
         flex-direction: row;
         
         gap: 1.5rem;
-        max-width: 80rem;
+        /*min-width: 80rem;*/
+        max-width: 99.25rem;
         padding: 1.5rem 2rem;
 
         & .card {
