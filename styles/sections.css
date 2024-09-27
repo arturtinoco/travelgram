@@ -81,7 +81,7 @@
 
         &:hover {
             & .info {
-                animation: fade-in .35s ease-in forwards;
+                animation: fade-in .2s ease-in forwards;
             }
         }
     }
