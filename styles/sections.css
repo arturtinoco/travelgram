@@ -84,3 +84,22 @@
         }
     }
 }
+
+@media (width >= 80em) {
+    #about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & .profile {
+            flex-direction: row;
+            gap: 2rem;
+            width: 37rem;
+
+            & img {
+                width: 11rem;
+                height: 11rem;
+            }
+        }
+    }
+}
