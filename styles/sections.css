@@ -40,6 +40,7 @@
 #gallery {
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
     padding: 1rem;
@@ -107,7 +108,7 @@
 
     #gallery {
         flex-direction: row;
-        flex-wrap: wrap;
+        
         gap: 1.5rem;
         max-width: 80rem;
         padding: 1.5rem 2rem;
