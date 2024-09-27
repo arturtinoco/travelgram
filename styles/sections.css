@@ -96,7 +96,7 @@
     }
 }
 
-@media ((width > 44em) and (width < 80em)) {
+@media ((width >= 44em) and (width < 80em)) {
     #about {
         flex-direction: row;
         justify-content: space-between;
