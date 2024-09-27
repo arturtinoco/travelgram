@@ -36,3 +36,50 @@
         }
     }
 }
+
+#gallery {
+    gap: 1rem;
+    padding: 1rem;
+
+    & .card {
+        position: relative;
+        cursor: pointer;
+
+        & img {
+            width: 20.5rem;
+            height: 20.5rem;
+        }
+
+        & .info {
+            flex-direction: column;
+            gap: .25rem;
+            width: 100%;
+            height: 5rem;
+
+            color: var(--text-color-primary);
+            background-color: var(--shape-transparency);
+            backdrop-filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.25));
+            backdrop-filter: blur(.5rem);
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+
+            padding: 1rem 1.5rem;
+
+            animation: fade-out .4s ease-out backwards;
+            cursor: text;
+
+            & p + p {
+                font: var(--paragraph-sm);
+            }
+        }
+
+        &:hover {
+            & .info {
+                animation: fade-in .35s ease-in forwards;
+            }
+        }
+    }
+}
